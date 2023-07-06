@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de RUT</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      font-size: 16px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3E8E41;
+    }
+
+    #result {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de RUT</h1>
+  <p>Ingrese los números antes del guión:</p>
+  <input type="text" id="rut-numbers" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="8">
+  <button id="calculate-button">Calcular</button>
+  <button id="random-button">Random</button>
+  <p id="result"></p>
+  <script src="popup.js"></script>
+</body>
+</html>

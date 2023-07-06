@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "Calcular digito verificador",
+    "version": "1.0",
+    "description": "Calcula el digito verificador de un rut",
+    "permissions": [ "activeTab" ],
+    "browser_action": {
+      "default_title": "Calcular digito verificador",
+      "default_popup": "popup.html"
+    }
+  }
